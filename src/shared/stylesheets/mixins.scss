@@ -1,0 +1,19 @@
+@mixin scroll-height($visible) {
+  $size: 4px;
+  &::-webkit-scrollbar {
+    background: transparent;
+    width: $size;
+    height: $size;
+    &-thumb {
+      background: transparent;
+      border: none transparent;
+      border-radius: 4px;
+      @if $visible {
+        background: #d3d3d3;
+      }
+      &:hover {
+        background: #d3d3d3;
+      }
+    }
+  }
+}
